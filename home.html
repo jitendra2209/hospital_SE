@@ -1,0 +1,59 @@
+<html>
+<head>
+  <style>
+    body{
+      background-image: url(hospital.jpg);
+    }
+    a{
+      font: size 15px;;
+      color: rgb(13, 13, 13);
+     
+     }
+     input[type="submit"]{
+    width: 35%;
+    height: 28px;
+    background-color: #26d9d9;
+    border-radius: 20px;
+    color: #6a00a8;
+    border:0px solid;
+    font-size: 15px;
+    cursor: pointer;
+     }
+     center{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+
+    background:rgb(255, 255, 255);
+    border-radius: 15px;
+    }
+    table,td{
+      padding: 5px;
+    }
+  </style>
+</head>
+<body >
+  <h1>Hospital Management System</h1>
+<h2 style="color:cornsilk">Welcome!!</h2>
+<center>
+<br>
+<form method="post" action="addnewpatient.html" name="addnewpatient">
+  <input name="addnewpatient" value="ADD DETAILS" type="submit"></form>
+<!--<form method="post" action="prescription.html" name="prescription">
+<input name="prescription" value="VIEW MY PRESCRIPTION" type="submit"></form>-->
+
+<form method="get" action="viewpatients.php" name="viewpatients">
+  <input name="viewpatients" value="MY DETAILS" type="submit"><br>
+  </form>
+
+<form method="get" action="myprescription.php" name="myprescription">
+  <input name="myprescription" value="PRESCRIPTION" type="submit"><br>
+</form>
+  <a href="logout.php">LOGOUT</a>
+  
+  
+</center>
+</body></html>
+

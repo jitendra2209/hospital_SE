@@ -1,0 +1,104 @@
+
+<html><head>
+  <title>Prescription</title>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background :linear-gradient(120deg,#65eb44,#258d23); 
+    height: 100vh;
+    overflow: hidden;}
+    center{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    
+    background:white;
+    border-radius: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    input{
+        border:none;
+        border-bottom: 2px solid #26d9d9;
+        background:none;
+        outline:none;
+    }
+     textarea{
+       border: #26d9d9;
+       border-bottom: 2px solid #26d9d9 ;
+       border-radius: 5px;
+       outline-color: #26d9d9;
+     }
+     table,td{
+       padding: 7px;
+       margin: auto;
+     }
+     input[type="submit"],input[type="reset"]{
+    width: 52%;
+    height: 28px;
+    border-radius: 15px;
+   padding: 0px;
+    border:2px solid aqua;
+    font-size: 15px;
+    cursor: pointer;
+    font-style: italic;
+  </style>
+  
+</head>
+<body >
+<br>
+<center><br>
+<form method="post" action="generateprescription.php"><big><big>PRESCRIPTION :<br>
+  <br>
+
+  <table width:="50%">
+    <tbody>
+		<tr>
+        <td>Doctor Name : <br>
+        </td>
+        <td><input name="doc_name" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Patient ID : <br>
+        </td>
+        <td><input name="id" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Medicine : <br>
+        </td>
+        <td><textarea cols="30" rows="3" name="medicine" required></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Dosage : <br>
+        </td>
+        <td>
+		<input name="dose" type="checkbox"> Morning<br>
+        <input name="dose" type="checkbox"> Afternoon<br>
+        <input name="dose" type="checkbox"> Night<br>
+        </td>
+      </tr>
+      <tr>
+        <td>Diagnosis :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="diagnosis" required></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Additional Info :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="instructions" required></textarea> </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <input name="submit" value="Generate Prescription" type="submit" >&nbsp;<input name="reset" value="RESET" type="reset"> <big><big><br>
+  </form><br>
+</center>
+</body>
+</html>

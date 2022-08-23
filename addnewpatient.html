@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+      body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background :linear-gradient(120deg,#e6e02e,#d88a03); 
+    height: 100vh;
+    overflow: hidden;
+    }
+    center{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+
+    background:white;
+    border-radius: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    table,td{
+      padding: 5px;
+    }
+    input[type="submit"],input[type="reset"]{
+    width: 30%;
+    height: 25px;
+    background-color: #26d9d9;
+    border-radius: 10px;
+    color: #6a00a8;
+    border:0px solid;
+    font-size: 15px;
+    cursor: pointer;
+    font-style: italic;}
+    input{
+        border:none;
+        border-bottom: 2px solid #6a00a8;
+        background:none;
+        outline:none;
+    }
+     textarea{
+       border: #6a00a8;
+       border-bottom: 2px solid #6a00a8 ;
+       border-radius: 5px;
+       outline-color: #6a00a8;
+     }
+    </style>
+  </head>
+<body >
+  
+  <center>
+    <h1 style="color: rgb(49, 146, 231);">Hospital Management System</h1>
+<form method="post" action="addpatient.php" ><big><big>Patient Info :<br>
+  <table width:="50%">
+    <tbody>
+      <tr>
+        <td>Patient ID : <br>
+        </td>
+        <td><input name="id" type="text" required ><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Full Name : <br>
+        </td>
+        <td><input name="name" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Age : <br>
+        </td>
+        <td><input name="age" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender : <br>
+        </td>
+        <td><input name="gender" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Occupation : <br>
+        </td>
+        <td><input name="occupation" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Contact Number<br>
+        </td>
+        <td><input name="mobile" type="text" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>Address<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="address" required></textarea> </td>
+      </tr>
+      <tr>
+        <td>Reason<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="reason" required></textarea> <br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input name="submit" value="ADD" type="submit">&nbsp; &nbsp; <input name="reset" value="RESET" type="reset"> <big><big><br>
+  </big></big></form>
+  </center>
+</body>
+  </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Page</title>
+    <style>
+        body{
+            background-image: url(hospital3.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: start;
+            color: rgb(248, 251, 253);
+        }
+        center{
+            position: absolute;
+            top: 55%;
+            left: 25%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+            padding: 6px 0px 5px 0px;
+            background:white;
+            border-radius: 15px;
+    }
+    input[type="submit"]{
+    width: 52%;
+    height: 28px;
+    border-radius: 20px;
+    color: #6a00a8;
+    border:0px solid;
+    font-size: 15px;
+    cursor: pointer;
+  
+     }
+     a{
+         text-align: center;
+         font-size: larger;
+         color:darksalmon ;
+     }
+    
+    </style>
+</head>
+<body> <p><h1>Welcome Doctor!</h1></p>
+    <center><br>
+
+        <form method="post" action="prescription.html" name="prescription">
+        <input name="prescription" value="CREATE PRESCRIPTION" type="submit"></form>
+        <br>
+        <form method="get" action="viewpatients.php" name="viewpatients">
+        <input name="viewpatients" value="VIEW PATIENT DETAILS" type="submit"></form><br>
+        <a href="doclogout.php">Logout!</a>
+
+    </center>
+</body>
+</html>
